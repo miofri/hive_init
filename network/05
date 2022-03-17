@@ -2,3 +2,9 @@
 
 # 5. Identify the IP address of the DNS that responds to the following url:
 # who.int
+# nslookup is used to find the IP address that corresponds to a host, or the
+# domain name that corresponds to an IP address (a process called
+# “Reverse DNS Lookup”).
+# top part is the IP address of the DNS server
+
+nslookup who.int

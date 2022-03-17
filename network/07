@@ -1,0 +1,6 @@
+#!/bin/bash/
+
+# Query an external DNS server on the who.int domain name (ie.: google 8.8.8.8)
+# uses 8.8.8.8 as the DNS server (address book).
+
+nslookup who.int 8.8.8.8
