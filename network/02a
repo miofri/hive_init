@@ -1,0 +1,8 @@
+#!/bin/bash/
+# Identify and display the Ethernet interface characteristics:
+# (a) Identify broadcast address
+
+# en is Standard Ethernet (inet).
+# use awk to grab the address broadcasted to the network on the 6th column.
+
+ifconfig en0 | awk '/broadcast/ {print $6}'

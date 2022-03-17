@@ -1,0 +1,11 @@
+#!/bin/bash/
+# Identifiy the default gateway in the routing table
+
+netstat -rn | awk ' /default/ {print}' | awk 'NR==1'
+
+# Netstat is a command line utility that can be used to list out all the
+# network (socket) connections on a system. It lists out all the tcp,
+# udp socket connections and the unix socket connections. Apart from
+# connected sockets it can also list listening sockets that are waiting for
+# incoming connections.
+# -rn shows the routing table, and network addresses as numbers.

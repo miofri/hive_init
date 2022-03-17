@@ -1,0 +1,5 @@
+#!/bin/bash/
+
+# when connected to wifi, en1 becomes active.
+# so the MAC address is the wifi card's.
+ifconfig en1 | awk '/ether/ {print}'

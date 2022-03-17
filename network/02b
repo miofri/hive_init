@@ -1,0 +1,14 @@
+#!/bin/bash/
+#Identify all IP adresses which are part of the same subnet
+
+# uses command from 02a to get the broadcast address.
+ipis=$(ifconfig en0 | awk '/broadcast/ {print $6}')
+# pinging broadcast address to get response from devices in the same network
+ping -t 1 $ipis
+# the mask is 255.255.0.0 so we want to get the first 2 columns using cut.
+# ipis is now the first two columns e.g. 10.13.
+ipis=$(echo $ipis | cut -d "." -f1-2)
+# arp -a lists machines that's connected to ours thru ethernet.
+# awk to get the 2nd column (ip address) then grep those that matches
+# $ipis (10.13)
+arp -a | awk '{print $2}' | grep $ipis
