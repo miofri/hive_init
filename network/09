@@ -1,0 +1,15 @@
+# Find the external IP of 42.fr
+
+Non-authoritative answer:
+Name:   42.fr
+Address: 163.172.250.16
+
+# Found with nslookup and ping'd 42.fr.
+
+# The external IP address or Public IP address is the IP address of the
+# router interface that is connected to the Internet.
+# A router will typically have two network interfaces.
+# An Internal Interface & an external Interface.
+# Each of these interfaces will have an IP address. The IP address assigned to
+# the external Interface will have a routable IP address and will be assigned
+# by your ISP. This address is also known as the public address.

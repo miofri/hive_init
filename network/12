@@ -1,0 +1,6 @@
+#!/bin/bash/
+# Find the IP that was assigned to you by dhcp server
+
+ifconfig en0 | awk '/inet / {print $2}'
+
+# https://www.acmesystems.it/ip_discovering

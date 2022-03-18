@@ -1,0 +1,9 @@
+#!/bin/bash/
+
+# Identify the network devices between your computer and the who.int domain
+
+traceroute who.int
+
+# The traceroute command attempts to trace the route an IP packet follows to
+# an Internet host. It sends 3 packets to the host and back three times.
+# the hop count increases for each router it passes.
