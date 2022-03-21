@@ -1,0 +1,6 @@
+# Make the intra.42.fr address reroute to 46.19.122.85
+
+# we can edit the /etc/hosts file so that 46.19.122.85 will corresponds to
+# intra.42.fr. It is due to a process called local DNS lookup, which lets
+# our computer find the IP address of a site without needing to find it in
+# an external server.
