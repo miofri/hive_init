@@ -1,1 +1,7 @@
-do at school
+# Thanks to the previous question and the reverse DNS find the name of your host
+
+# after doing 12, if we use reverse dns lookup it will give us the IP of
+# the DNS server. Then by using nslookup on that IP, we will get the name of
+# the host.
+
+name = dhcp-ns1.hive.fi.

@@ -2,4 +2,4 @@
 # the device that makes the link between you (local network) and the
 # outside world
 
-(use nslookup at school)
+nat (10.60.1.1)
