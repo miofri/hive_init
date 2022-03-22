@@ -1,0 +1,9 @@
+#!/bin/bash/
+# Find the command that kills the background command's process.
+
+sudo pkill tail
+
+# kill command needs a PID while pkill command only needs the name of the
+# process or other attributes.
+# Regular users can kill their own processes, but not those that belong to
+# other users, while the root user can kill all processes.

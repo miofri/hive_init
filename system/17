@@ -1,0 +1,8 @@
+# via Debian WSL:
+# install openssh first with: sudo apt-get install openssh-server ii
+# then start the ssh server by running:
+# sudo service ssh start
+# check if the ssh server is running by connecting to localhost (own machine)
+# ssh localhost or ssh user@IPaddress
+
+ssh user@IPaddress

@@ -1,0 +1,12 @@
+# Find the service which makes it possible to run specific tasks following
+# a regular schedule.
+
+cron
+
+# the cron service run tasks in the background at specific time.
+# crontab -e opens user account's crontab file.
+# For example, let’s say we want to run the command /usr/bin/example
+# at 12:30 a.m. every day. We’d type:
+# 29 0 * * * /usr/bin/example
+# the format is:
+# minute(0-59) hour(0-23) day(1-31) month(1-12) weekday(0-6) command

@@ -1,0 +1,9 @@
+#!/bin/bash/
+# Run the 'tail -f /var/log/syslog' command in background
+
+tail -f /var/log/syslog &
+
+# adding an & will run the command in the background. A process ID will be
+# printed on the terminal. Use jobs -l to display all status of bg jobs in the
+# shell session and use kill -9 (process ID) to kill the bg process.
+# kill command has 3 modes: -1 (reload), -9 (kill) & 15 (terminate gracefully).
