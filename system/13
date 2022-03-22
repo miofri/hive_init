@@ -1,0 +1,11 @@
+#!/bin/bash/
+
+# Name the command that find, in real time, currently running processes
+
+ps -aux
+
+# ps : provides information about the currently running processes, including
+# their process identification numbers (PIDs)
+# A : Select all processes
+# u : Select all processes on a terminal, including those of other users
+# x : Select processes without controlling ttys
