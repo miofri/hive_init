@@ -1,0 +1,10 @@
+# What file contains the RSA keys of systems that are authorized to connect via SSH?
+
+# https://www.digitalocean.com/community/tutorials/
+# how-to-configure-ssh-key-based-authentication-on-a-linux-server
+
+# After generating a key with ssh-keygen,I need to copy the key to the
+# remote SSH server by using ssh-copy-id username@remote_host e.g. user@debian
+# then we can see the authorized key by using
+
+cat ~/.ssh/authorized_keys

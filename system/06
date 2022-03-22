@@ -1,0 +1,6 @@
+#!/bin/bash/
+# Name the command that reboots the SSH service.
+
+# in Debian wsl: sudo service ssh restart
+
+sudo systemctl restart ssh

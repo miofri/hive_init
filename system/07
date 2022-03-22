@@ -1,0 +1,8 @@
+#!/bin/bash/
+
+# Figure out the PID of the SSHD service
+
+cat /var/run/sshd.pid
+
+# sshd will typically write a PID file; by default this is at /var/run/sshd.pid
+# You can use this to find the process ID of the listening sshd process.

@@ -1,0 +1,12 @@
+#!/bin/bash/
+
+# Name the command that determines the state of the SSH service.
+
+sudo systemctl status ssh
+
+# SSH or Secure Shell is a network communication protocol that enables two
+# computers to communicate and share data. An inherent feature of ssh is that
+# the communication between the two computers is encrypted meaning that it is
+# suitable for use on insecure networks.
+
+# in Debian WSL: sudo service ssh status
