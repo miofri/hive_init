@@ -1,0 +1,11 @@
+#!/bin/bash/
+
+# List all services which are started at boot time and name this kind of
+# services
+
+sudo service --status-all
+
+# this command will list all services in /etc/init.d.
+# The init.d directory contains a number of start/stop scripts for various
+# services on the system
+# The + indicates the service is running, - indicates a stopped service.

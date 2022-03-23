@@ -1,0 +1,6 @@
+#!/bin/bash/
+
+# 18. Find the command that kills ssh service
+# on debian WSL:
+
+sudo service ssh stop

@@ -1,3 +1,5 @@
+#!/bin/bash/
+
 # via Debian WSL:
 # install openssh first with: sudo apt-get install openssh-server ii
 # then start the ssh server by running:
@@ -6,3 +8,6 @@
 # ssh localhost or ssh user@IPaddress
 
 ssh user@IPaddress
+
+# for example, i can connect to the ssh server by looking up the ip of host of
+# the server (me) in this case with nslookup, then typing ssh selvi@127.0.0.1.

@@ -1,0 +1,9 @@
+#!/bin/bash/
+
+# List all existing users on the VM
+
+cat /etc/passwd | cut -d : -f1
+
+# Local user information is stored in the /etc/passwd file.
+# Each line in this file represents login information for one user.
+# we take only the user name with cut.
