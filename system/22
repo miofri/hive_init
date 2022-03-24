@@ -1,0 +1,6 @@
+#!/bin/bash/
+# Find the command that add a new local user
+
+sudo adduser new-user
+
+# password can be added also by sudo passwd new-user

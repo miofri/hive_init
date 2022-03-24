@@ -1,0 +1,10 @@
+#!/bin/bash/
+
+# List all real users on the VM
+
+cat /etc/passwd | awk -F: '($3>=1000)&&($1!="nobody")' | cut -d: -f1
+
+# real users's UID (user ID) starts from 1000. In /etc/passwd that is the
+# 3rd field. However we need to exclude "nobody" which has the UID 65534.
+# Nobody is used by the Network File System serves when they can't trust
+# the client-supplied UID and GID (group ID).
