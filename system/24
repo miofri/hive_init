@@ -1,0 +1,9 @@
+#!/bin/bash/
+
+# 24. Find the command that list all packages
+
+apt list --installed
+
+# The list command allows you to list the available, installed and, upgradeable
+# packages.
+# --installed flag will list only those installed.

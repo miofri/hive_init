@@ -1,3 +1,7 @@
 # Explain how to connect yourself as new user.
 
-ssh user@IP
+# after installing openssh, we start the server and
+# we create a new user with adduser command.
+# we can connect to the ssh server as the user we want via
+# ssh user@Ipaddress.
+# in the VM, we can type e.g. newuser@127.0.0.1 or newuser@10.0.2.15
