@@ -1,0 +1,32 @@
+#!/bin/bash/
+
+# Write a script which delete an ACTIVE user on the VM.
+
+echo -e "List of all real users:\n"
+cat /etc/passwd | awk -F: '($3>=1000)&&($1!="nobody")' | cut -d: -f1
+
+echo -e "\nEnter username that you would like to delete:"
+read usrname
+
+usrlist=$(cat /etc/passwd | awk -F: '($3>=1000)&&($1!="nobody")' | cut -d: -f1 | grep "$usrname")
+
+if [ -n "$usrlist" ]
+	then
+		sudo killall -u $usrlist
+		sudo userdel -r $usrlist
+		echo -e "$usrname deleted."
+	else
+		echo "User not found."
+fi
+
+# echo -e enables backslash intepretation. without it, "\n" will be printed out
+# Line 6 - lists all real users and shows only the username with cut.
+# Line 9 - will take input and saves it as usrname.
+# Line 11 - checks if usrname exists in the /etc/passwd file which stores all users.
+# Line 13 - -n flag = not null. so if user was found in Line11, we'll use
+# killall command to kill all processes run by the user. -u flag for killall
+# is to delete processes by username, and not PID.
+# Line 16 - userdel to delete user, and -r flag is to remove the
+# home directory and mail spool by force. Lastly we print that user has been
+# deleted.
+#Line 19 - if line 13 was false, then we will only print that user is not found.
