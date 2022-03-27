@@ -1,0 +1,39 @@
+#!/bin/bash/
+# Three’s a Charm. Write a script of you choice.
+
+while [ -n $selection ];
+do
+	echo "Select an option:"
+	echo -e "1. Boot SSH  & show status\n2. Check current logged users\n3. Reboot system\n4. Check for update & upgrade \n5. Exit\nEnter [1/2/3/4/5]\n"
+	read selection
+	if [ $selection -eq 5 ]
+		then
+		echo "Exiting."
+		break
+	elif [ $selection -lt 1 ] || [ $selection -gt 4 ]
+		then
+		echo "invalid selection, enter a number from 1 to 5."
+	else
+		break
+	fi
+done
+
+if [ $selection == 1 ];
+	then
+	echo "Booting SSH"
+	sudo service ssh start
+	sudo service ssh status
+elif [ $selection == 2 ];
+	then
+	echo "List of all real users:"
+	cat /etc/passwd | awk -F: '($3>=1000)&&($1!="nobody")' | cut -d: -f1
+elif [ $selection == 3 ];
+	then
+	echo "Rebooting..."
+	sleep .5
+	reset
+elif [ $selection == 4 ];
+	then
+	sudo apt-get update
+	sudo apt-get upgrade
+fi
