@@ -3,9 +3,9 @@
 # Figure out the exact size of each folder of /var in a humanly
 # understandable way followed by the path of it.
 
-sudo du -h
+sudo du -sh /var/*
 
 # du shows the disk usage of files, folders, etc. in the default kilobyte size.
 # du -h shows disk usage in human-readable format for all directories and
-# subdirectories.
+# subdirectories. -s summarize and shows only the total for each argument.
 # sudo needed here to access specific folders

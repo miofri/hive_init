@@ -2,9 +2,15 @@
 
 # Name the command that lists the partition tables of drives?
 
-lsblk
+fdisk -l
 
+# -l display partitions and exit
+# alternative:
 # The lsblk command lists all the block devices of your system
 # along with their logical partitions.
 # block devices are special files that refer to or represent a device (which
 # could be anything from a hard drive to a USB drive)
+# lsblk shows size in IEC units (GiB, MiB, etc). A gibibyte (GiB) is larger than a gigabyte (GB)
+# fdisk shows size in SI (GB, MB, etc).
+# one GB is defined as 1000³ (1,000,000,000) bytes and one GiB as 1024³ (1,073,741,824) bytes.
+# That means one GB equals 0.93 GiB.

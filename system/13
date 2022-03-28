@@ -11,3 +11,4 @@ ps -aux
 # x : Select processes without controlling ttys
 # tty command prints the name of the terminal you’re using. TTY stands for
 # “teletypewriter.”
+# we can also use top command for real time processes
