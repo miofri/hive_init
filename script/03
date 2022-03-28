@@ -12,7 +12,7 @@ do
 		break
 	elif [ $selection -lt 1 ] || [ $selection -gt 4 ]
 		then
-		echo "invalid selection, enter a number from 1 to 5."
+		echo "Invalid selection, enter a number from 1 to 5."
 	else
 		break
 	fi

@@ -1,5 +1,7 @@
 #!/bin/bash/
 
+# Find the command that allows you to connect via ssh on the VM. (In parallel with
+# the graphic session)
 # via Debian WSL:
 # install openssh first with: sudo apt-get install openssh-server ii
 # then start the ssh server by running:
