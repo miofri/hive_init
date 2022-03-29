@@ -5,7 +5,13 @@
 
 sudo systemctl list-unit-files --type=service --state=enabled --all
 
-# this command will list all services in /etc/init.d.
-# The init.d directory contains a number of start/stop scripts for various
-# services on the system
-# The + indicates the service is running, - indicates a stopped service.
+# systemd is an init system and system manager that has widely become the new standard
+# for Linux distributions.
+# systemctl command is the central management tool for controlling the init system.
+
+# To see every available unit file within the systemd paths, including
+# those that systemd has not attempted to load, we use the list-unit-files
+# --state=enabled means the system will run the service on the next boot.
+# So if you enable a service, you still need to manually start it, or reboot and it will start.
+# to see all of the units that systemd has loaded (or attempted to load), regardless of
+# whether they are currently active, you can use the --all flag

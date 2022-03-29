@@ -13,7 +13,7 @@ usrlist=$(cat /etc/passwd | awk -F: '($3>=1000)&&($1!="nobody")' | cut -d: -f1 |
 if [ -n "$usrlist" ]
 	then
 		sudo killall -u $usrlist
-		sudo userdel -r $usrlist
+		sudo userdel -rf $usrlist
 		echo -e "$usrname deleted."
 	else
 		echo "User not found."
