@@ -1,7 +1,7 @@
 #!/bin/bash/
 # Run the 'tail -f /var/log/syslog' command in background
 
-tail -f /var/log/syslog &
+sudo tail -f /var/log/syslog &
 
 # adding an & will run the command in the background. A process ID will be
 # printed on the terminal. Use jobs -l to display all status of bg jobs in the

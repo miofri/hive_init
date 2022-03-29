@@ -2,8 +2,10 @@
 
 # Name the command that find, in real time, currently running processes
 
-ps -aux
+top
 
+# top provides currently running processes in real time.
+# previously:
 # ps : provides information about the currently running processes, including
 # their process identification numbers (PIDs)
 # A : Select all processes

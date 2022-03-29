@@ -4,4 +4,4 @@
 # the DNS server. Then by using nslookup on that IP, we will get the name of
 # the host.
 
-name = dhcp-ns1.hive.fi.
+name = c3r3p4.hive.fi.

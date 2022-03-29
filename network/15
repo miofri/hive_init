@@ -4,3 +4,4 @@
 # intra.42.fr. It is due to a process called local DNS lookup, which lets
 # our computer find the IP address of a site without needing to find it in
 # an external server.
+# add this line to /etc/hosts: 46.19.122.85 intra.42.fr .

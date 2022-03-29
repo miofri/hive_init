@@ -3,7 +3,7 @@
 # List all services which are started at boot time and name this kind of
 # services
 
-sudo service --status-all
+sudo systemctl list-unit-files --type=service --state=enabled --all
 
 # this command will list all services in /etc/init.d.
 # The init.d directory contains a number of start/stop scripts for various

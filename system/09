@@ -2,7 +2,7 @@
 
 # What command lets you know who is connected to the System?
 
-w | awk '/USER/ {print $1}'
+who
 
 # w command is used to show logged-in user names and what they are doing. The
 # information will be read from /var/run/utmp file. The output of the w command
